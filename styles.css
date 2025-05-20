@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --color-primary: rgb(244, 231, 225);
+  --color-secondary: rgb(255, 155, 69);
+  --color-accent-1: rgb(213, 69, 27);
+  --color-accent-2: rgb(82, 28, 13);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: var(--color-primary);
+}
+
+.menu {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+.menu__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+}
+.menu__logo {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 0.5rem;
+}
+.menu__logo > .text {
+  font-weight: bold;
+}
+.menu__logo > .icon {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-accent-1);
+  border-radius: 50%;
+}
+
+.presentation {
+  background-color: var(--color-secondary);
+  display: flex;
+  height: min-content;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.presentation::before {
+  content: '';
+  background-image: url(https://townsquare.media/site/252/files/2024/07/attachment-Untitled-design-2024-07-25T134132.093.jpg?w=980&q=75);
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.intro {
+  font-size: 0.85em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.intro__title {
+  color: var(--color-accent-1);
+  font-size: 2.5em;
+}
+.intro__subtitle {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+.intro__text {
+  margin-top: 1rem;
+}
+.intro__img {
+  object-fit: cover;
+  height: 12rem;
+  border-radius: 20px;
+}
+
+.intro__info {
+  width: 70%;
+}
+
+.intro__button {
+  text-align: end;
+  padding-right: 1rem;
+}
+.intro__link {
+  color: var(--color-accent-2);
+  font-weight: bold;
+}
+
+.services {
+  background-color: var(--color-accent-2);
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-primary);
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 30%;
+  padding: 0.5rem;
+  box-shadow: 6px 0 4px -6px var(--color-primary),
+    -6px 0 4px -6px var(--color-primary);
+}
+
+.card__title {
+  font-size: 1em;
+}
+.card__text {
+  font-size: 0.8em;
+  color: rgb(241, 238, 238);
+  -webkit-line-clamp: 4;
+}
+
+.truncate-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__icon {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__button {
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 6px;
+}
+
+.info-company {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.199);
+}
+
+.article {
+  border-right: 1px solid rgba(0, 0, 0, 0.144);
+  padding-right: 1.5rem;
+}
+
+.article__subtitle {
+  margin-block: 0.5lh;
+}
+
+.article__text {
+  margin-block: 1lh;
+}
+
+.aticle__button {
+  text-align: end;
+}
+
+.event__card {
+  width: 12rem;
+  padding-inline: 0.8rem;
+}
+
+.event__date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.event__date > .icon {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-accent-2);
+}
+
+.event__title {
+  text-decoration: underline;
+  margin-block: 0.5lh;
+  color: var(--color-accent-1);
+}
+
+.event__text {
+  -webkit-line-clamp: 2;
+}
+
+footer {
+  padding: 1rem;
+}
+.policy {
+  display: flex;
+  font-size: 0.8em;
+}
