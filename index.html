@@ -9,18 +9,23 @@
       Remove all code in `styles.css`!
     -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <nav class="menu">
       <div class="menu__logo">
-        <div class="icon"></div>
+        <img src="burger.svg" alt="burger-icon" class="icon"></img>
         <div class="text">MastiBurguers</div>
       </div>
-      <ul class="menu__list">
+
+      <a class="menu__icon" href="#open-menu">
+        <img src="menu.svg" alt="menu" />
+      </a>
+      <ul class="menu__list" id="open-menu">
+        <li><a class="menu__link" href="#">Inicio</a></li>
         <li><a class="menu__link" href="#">Acerca de</a></li>
         <li><a class="menu__link" href="#">Productos</a></li>
-        <li><a class="menu__link" href="#">Inicio</a></li>
         <li><a class="menu__link" href="#">Contacto</a></li>
         <li><a class="menu__link" href="#">Servicio</a></li>
       </ul>
@@ -53,7 +58,7 @@
 
       <section class="services">
         <div class="card">
-          <h1 class="card__title">Titulo del producto</h1>
+          <h1 class="card__title">Pedidos a Domicilio</h1>
           <p class="card__text truncate-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
             consequatur molestias dolor nostrum. Provident tenetur eum, aut vero
@@ -61,8 +66,8 @@
             corporis reprehenderit dignissimos?
           </p>
           <div class="card__footer">
-            <div class="card__icon"></div>
-            <button class="card__button">Clic Aquí</button>
+            <img src="truck.svg" alt="truck-icon" class="card__icon"></img>
+            <button type="button" class="card__button">Clic Aquí</button>
           </div>
         </div>
         <div class="card">
@@ -74,8 +79,8 @@
             corporis reprehenderit dignissimos?
           </p>
           <div class="card__footer">
-            <div class="card__icon"></div>
-            <button class="card__button">Clic Aquí</button>
+            <img src="truck.svg" alt="truck-icon" class="card__icon"></img>
+            <button type="button" class="card__button">Clic Aquí</button>
           </div>
         </div>
         <div class="card">
@@ -87,8 +92,8 @@
             corporis reprehenderit dignissimos?
           </p>
           <div class="card__footer">
-            <div class="card__icon"></div>
-            <button class="card__button">Clic Aquí</button>
+            <img src="truck.svg" alt="truck-icon" class="card__icon"></img>
+            <button type="button" class="card__button">Clic Aquí</button>
           </div>
         </div>
       </section>
@@ -114,10 +119,10 @@
           </div>
         </div>
         <aside class="news-events">
+        <h3 class="event__name">News & Events</h3>
           <div class="event__card">
-            <h3 class="event__name">News & Events</h3>
             <div class="event__date">
-              <div class="icon"></div>
+              <img class="icon" src="event.svg" alt="event-icon">
               <div>septiembre 12, 2025</div>
             </div>
             <h4 class="event__title">Title evento</h4>
@@ -127,9 +132,9 @@
             </p>
           </div>
           <div class="event__card">
-            <h3 class="event__name">News & Events</h3>
+           
             <div class="event__date">
-              <div class="icon"></div>
+              <img class="icon" src="event.svg" alt="event-icon">
               <div>septiembre 12, 2025</div>
             </div>
             <h4 class="event__title">Title evento</h4>

@@ -1,0 +1,124 @@
+:root {
+  --color-primary: rgb(244, 231, 225);
+  --color-secondary: rgb(255, 155, 69);
+  --color-accent-1: rgb(213, 69, 27);
+  --color-accent-2: rgb(82, 28, 13);
+}
+
+@media screen and (max-width: 425px) {
+  main{
+    margin-top: 64px;
+  }
+  .menu{
+    position: fixed;
+    left: 0;
+    right:0;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-primary);  
+  }
+  .menu__list {
+    position: fixed;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-evenly;
+    inset-inline: 0;
+    bottom: 0;
+    top: 64px;
+    background-color: var(--color-accent-2);
+    clip-path: circle(0% at top left);
+    transition: all 0.4s;
+  }
+
+  .menu__list:target {
+    clip-path: circle(150% at top left);
+  }
+
+  .menu__link {
+    color: var(--color-primary);
+  }
+
+  .menu__icon {
+    display: block;
+  }
+
+  .presentation {
+    padding: 0.4rem;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    padding-inline:1rem;
+  }
+
+  .intro__img {
+    object-fit: cover;
+    overflow: hidden;
+    width: max-content;
+    margin: auto;
+  }
+
+  .intro__info {
+    width: 100%;
+    font-size: smaller;
+  }
+
+  .intro__title {
+    font-size: x-large;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: var(--color-accent-2);
+  }
+
+  .card {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+  }
+
+  .card__title,
+  .card__text {
+    color: black;
+  }
+
+  .info-company {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .article__title {
+    font-size: medium;
+  }
+  .article__subtitle,
+  .article__text {
+    font-size: small;
+  }
+
+  .article {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    padding-bottom: 1rem;
+  }
+
+  .news-events{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .event__title, .event__text{
+    text-align: left;
+  }
+
+}
